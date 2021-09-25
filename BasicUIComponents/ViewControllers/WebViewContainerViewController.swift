@@ -136,17 +136,10 @@ extension WebViewContainerViewController: WKUIDelegate {
         
         
 }
-    
-    
-    
-    
-    
-    
+        
 }
 
 extension WebViewContainerViewController: WKNavigationDelegate {
-    
-    
     
     
 }
@@ -158,14 +151,15 @@ extension WebViewContainerViewController: UIScrollViewDelegate{
   
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        if (self.lastContentOffset > toolbar.frame.size.height) {
-                toolbar.isHidden = true
-            }
-        else if (self.lastContentOffset < toolbar.frame.size.height) {
-                toolbar.isHidden = false
-            }
-            // update the new position acquired
-        self.lastContentOffset = toolbar.frame.size.height
+        if (self.lastContentOffset > scrollView.contentOffset.y) {
+                   toolbar.isHidden = false
+               }
+               else if (self.lastContentOffset < scrollView.contentOffset.y) {
+                   toolbar.isHidden = true
+               }
+
+               // update the new position acquired
+               self.lastContentOffset = scrollView.contentOffset.y
         }
 
         

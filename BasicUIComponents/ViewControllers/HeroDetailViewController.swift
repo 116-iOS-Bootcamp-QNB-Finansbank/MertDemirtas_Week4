@@ -11,27 +11,30 @@ import Hero
 class HeroDetailViewController: UIViewController {
 
     @IBOutlet weak var imgView: UIImageView!
-    @IBOutlet weak var imgLabel: UILabel!
     
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        imgView.image = UIImage(named: "swiftImg")
         
+        
+        let tapGR = UITapGestureRecognizer(target: self, action: #selector(self.imageTapped))
+        imgView.addGestureRecognizer(tapGR)
+        imgView.isUserInteractionEnabled = true
+        
+        imgView.hero.id = "img"
        
 
         // Do any additional setup after loading the view.
-        hero.isEnabled = true
        
         
     }
     
-    @IBAction func button(_ sender: Any) {
-        let view = self.storyboard?.instantiateViewController(withIdentifier: "hero2") as! UIViewController
-          view.hero.modalAnimationType = .push(direction: .right)
-          present(view, animated: true, completion: nil)
-    }
-    
+    @objc func imageTapped(sender: UITapGestureRecognizer) {
+        performSegue(withIdentifier: "second", sender: "")
 
+    }
+   
 
 }

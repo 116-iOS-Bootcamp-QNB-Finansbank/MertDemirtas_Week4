@@ -57,16 +57,16 @@ class HomeworkCollectionViewController: UICollectionViewController {
     }
 
     var cells = [
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
-        cellItems(cellImage: UIImage(named: "zikirmatik")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
+        cellItems(cellImage: UIImage(named: "kodluyoruz")!, cellLabel: "Kodluyoruz"),
         
         
     
